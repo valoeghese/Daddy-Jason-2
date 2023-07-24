@@ -1,0 +1,25 @@
+{
+  "name": "daddy-jason-2",
+  "version": "1.0.0",
+  "description": "Discord bot for serving collectibles that can be claimed",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "prod": "node dist/index.js",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valoeghese/Daddy-Jason-2.git"
+  },
+  "author": "Mekal Covic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/valoeghese/Daddy-Jason-2/issues"
+  },
+  "homepage": "https://github.com/valoeghese/Daddy-Jason-2#readme",
+  "devDependencies": {
+    "@types/node": "^20.4.4",
+    "typescript": "^5.1.6"
+  }
+}
