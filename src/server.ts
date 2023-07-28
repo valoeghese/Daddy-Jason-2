@@ -18,11 +18,9 @@ app.use(express.static(publicDir));
 // Error Handler
 app.use((err, req, res, next) => {
 	console.error(err);
-	res.status(500).send(`<!DOCTYPE html>
-	<html>
-		<head><title>Error 500</title></head>
-		<body>Something went wrong :(</body>
-	</html>`);
+	res.status(500).send(`{
+		"error": "unknown"
+	}`);
 });
 
   

@@ -1,19 +1,19 @@
 import "dotenv/config.js"
 import "./model/database/database.js"
 import * as Discord from "./discord/discord.js"
-import app from "./website.js"
+import app from "./server.js"
 
 Discord.startDiscord({
 	token: process.env["discord.token"],
 	prefix: process.env["discord.prefix"]
 });
 
-startWebsite(
-	process.env["website.location"],
-	process.env["website.port"]
+startServer(
+	process.env["server.location"],
+	process.env["server.port"]
 );
 
-function startWebsite(location?: string, port?: string): void {
+function startServer(location?: string, port?: string): void {
 	// ensure both location and port are specified
 	let missing = [];
 	
